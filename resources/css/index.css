@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+
+/* Button-Color= #ff6b81 */
+/* Background-color= #ece9e6;*/
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-family: "Righteous", cursive;
+}
+
+/* ---------------------------------------------- */
+/* -------------------Side Bar------------------- */
+/* ---------------------------------------------- */
+
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: grey;
+  left: -200px;
+  transition: all 500ms ease-in-out;
+}
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar ul li {
+  list-style: none;
+  color: white;
+  padding: 15px 10px;
+  border-bottom: 1px solid #797979;
+  cursor: pointer;
+}
+
+#sidebar ul li:hover,
+#sidebar ul li:active {
+  list-style: none;
+  color: white;
+  padding: 15px 10px;
+  border-bottom: 1px solid #797979;
+  cursor: pointer;
+  background: #2bcbba;
+}
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #797979;
+  margin: 3px 5px;
+}
+
+/*---------------------------------------------*/
+/*-------------------HEADER--------------------*/
+/*---------------------------------------------*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/resources/css/img/Traveling.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.title {
+  color: white;
+  font-size: 500%;
+  text-align: center;
+  font-family: "Righteous", cursive;
+  text-shadow: 2px 2px 4px #000000;
+  padding-top: 260px;
+  font-weight: 700;
+}
+
+.tag-line {
+  color: white;
+  text-align: center;
+}
+
+.home-login {
+  top: 15px;
+  right: 180px;
+  padding: 20px 30px 20px 30px;
+  background-color: #2bcbba;
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.home-register {
+  top: 15px;
+  right: 15px;
+  padding: 20px 30px 20px 30px;
+  background-color: #2bcbba;
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.home-login:hover,
+.home-login:active,
+.home-register:hover,
+.home-login:active {
+  background-color: white;
+  color: #2bcbba;
+}
+/* ---------------------------------------------- */
+/* -----------------FIRST SECTION---------------- */
+/* ---------------------------------------------- */
+
+.first-section {
+  height: 100vh;
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+
+.section-title {
+  color: rgb(53, 53, 53);
+  font-size: 300%;
+  text-align: center;
+  font-family: "Righteous", cursive;
+  text-shadow: 2px 2px 4px #000000;
+  padding-top: 50px;
+  display: block;
+  z-index: 1;
+}
+
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: rgb(41, 41, 41);
+  content: " ";
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.reasons-para {
+  text-align: justify;
+  margin: 100px 80px 0px 90px;
+}
+
+img {
+  border-radius: 5px;
+  border: 1px black;
+}
