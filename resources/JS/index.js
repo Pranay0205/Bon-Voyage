@@ -1,5 +1,21 @@
-function toggleSidebar() {
-  document.getElementById("sidebar").classList.toggle("active");
-}
+//-------------------------------------//
+//-------Hamburger Menu Effect--------//
+//-----------------------------------//
 
-console.log("hi THere!!");
+var toggleButton = document.getElementById("toggle-btn");
+toggleButton.addEventListener("click", function() {
+  {
+    var icon = document.getElementById("toggle-btn");
+    var sideBar = document.getElementById("sidebar");
+    if (icon.classList.contains("ion-navicon-round")) {
+      sideBar.style.cssText = "left:0px";
+      icon.classList.remove("ion-navicon-round");
+      icon.classList.add("ion-close-round");
+      console.log(sideBar);
+    } else {
+      sideBar.style.cssText = "left:-200px";
+      icon.classList.add("ion-navicon-round");
+      icon.classList.remove("ion-close-round");
+    }
+  }
+});
