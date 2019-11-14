@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Join Us</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/Register.css">
+
+
+  </head>
+
+
+  
+    <body>
+
+      <div class="BG-img"></div>
+    <div class="details">
+      <form action="insertreg.php" method="POST">
+        <table>
+
+        <tr>
+            <td>
+              <p>Name : </p>
+            </td>
+            <td><input id="username" type="text" name="username" required></td>
+          </tr>
+          <tr>
+            <td>
+              <p>Password :
+            </td>
+            <td><input id="password" type="password" name="password" required></td>
+          </tr>
+          <tr>
+            <td><p>Gender : </p></td>
+            <td><p><input type="radio" name="gender" value="m" required>
+              Male
+              <input type="radio" name="gender" value="f" required>
+              Female</p>
+            </td>
+          </tr>
+          <tr>
+            <td><p>Email : </p></td>
+            <td><input id="email" name="email" type="email"required ></td>
+          </tr>
+          <tr>
+            <td><p>Phone No. : </p></td>
+            <td><select name="phoneCode" required>
+              <option selected hidden value="">Select Code</option>
+                  <option value="91">+91</option>
+                  <option value="61">+61</option>
+                  <option value="11">+11</option>
+                  <option value="1">+1</option>
+                  <option value="971">+971</option>
+                  <option value="81">+81</option>
+                </select>
+                <input type="phone" name="phone" required>
+              </td>
+              <tr>
+                <td><input type="submit" name="submit" value="Submit" ></td>
+              </tr>
+            </tr>
+      
+
+
+        </table>
+      </form>
+    </div>
+  
+
+
+</body>
+
+
+  </html>

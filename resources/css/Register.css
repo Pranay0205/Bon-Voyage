@@ -1,0 +1,81 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* header{
+  background-image:  url("/Bon-Voyage/resources/css/img/LoginBG.jpg");
+  
+       height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+       background-size: cover;
+       filter: blur(2px);
+  -webkit-filter: blur(2px);
+
+} */
+.BG-img{
+  background-image:  url("/resources/css/img/LoginBG.jpg");
+  
+       height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+       background-size: cover;
+    
+       filter: blur(10px);
+    z-index: -1;
+    -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+
+.details{ 
+  
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,200, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 5px solid #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 30%;
+  border-radius: 10px;
+  -webkit-animation: fadein 4s;
+  animation: fadein 4s;
+  
+  
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.details p{
+  color:#FFD700;
+  font-family: Arial;
+  font-weight: bolder;
+  padding:5px;
+  transition: opacity 2s ease-in;
+}
+
+.details input{
+  border: 2px solid blue;
+  border-radius: 4px;
+   background-color: rgb(146, 175, 226);
+}
+
+
+.t1 {
+
+  width:35%;float: none;
+}
+
+.one {
+  
+}
