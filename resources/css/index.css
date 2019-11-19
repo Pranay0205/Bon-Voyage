@@ -75,8 +75,7 @@ i {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/resources/css/img/TitleBG.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/css/img/TitleBG.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -140,8 +139,7 @@ a {
   /* background: #ceccca;
   background: -webkit-linear-gradient(to right, #ffffff, #ceccca);
   background: linear-gradient(to right, #ffffff, #ceccca); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
-    url(/resources/css/img/World.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(/resources/css/img/World.jpg);
 }
 
 .section-title {
