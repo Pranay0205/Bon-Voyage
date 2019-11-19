@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/Booking.css" />
+    <title>Booking Page</title>
+  </head>
+  <body>
+    <section class="booking-section">
+      <h1 class="title">Bookings</h1>
+
+      <div class="main-container">
+        <button type="button" name="add-btn" class="add-btn" onclick="counts()">Add Members</button>
+        <button type="button" name="rmv-btn" class="rmv-btn">Remove Members</button>
+
+        <form action="booking.php" method="POST">
+          <div id="members-container">
+            <div id="members">
+              <p>Member Name:<br /><input type="text" name="mem-0" placeholder="Member Name" required /></p>
+            </div>
+            <button type="submit" value="submit" name="submit" class="sub-btn">Book</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="/resources/JS/Booking.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

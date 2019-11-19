@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+@import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Righteous", cursive;
+  background: linear-gradient(45deg, #780206, #061161);
+  background-repeat: no-repeat;
+}
+
+section {
+  height: 100vh;
+}
+
+.title {
+  color: #ececec;
+  font-size: 250%;
+  text-align: center;
+  font-family: "Righteous", cursive;
+  text-shadow: 2px 2px 4px #000000;
+  padding-top: 50px;
+  font-weight: 700;
+}
+
+.main-container {
+  left: 25%;
+
+  position: absolute;
+}
+
+.add-btn,
+.rmv-btn,
+.sub-btn {
+  padding: 10px 15px;
+  background-color: #2bcbba;
+  font-family: "Righteous", cursive;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 80%;
+  outline: none;
+  background: linear-gradient(to right, white 50%, #2bcbba 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
+}
+
+.add-btn:hover,
+.add-btn:active,
+.rmv-btn:hover,
+.rmv-btn:active,
+.sub-btn:hover,
+.sub-btn:active {
+  background-position: left bottom;
+  color: #2bcbba;
+}
+
+#members-container input {
+  display: block;
+  margin: 2px;
+  padding: 5px;
+  width: 130%;
+  font-family: "Lora";
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#members-container p {
+  margin-bottom: 30px;
+}

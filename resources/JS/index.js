@@ -19,3 +19,13 @@ toggleButton.addEventListener("click", function() {
     }
   }
 });
+
+function packagepage() {
+  window.location.href = "/package.html";
+}
+function register() {
+  window.location.href = "/Register.html";
+}
+// function login() {
+//   window.location.href = "/package.html";
+// }
