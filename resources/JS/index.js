@@ -21,11 +21,16 @@ toggleButton.addEventListener("click", function() {
 });
 
 function packagepage() {
-  window.location.href = "/package.html";
+  window.location.href = "package.html";
 }
 function register() {
-  window.location.href = "/Register.html";
+  window.location.href = "Register.html";
 }
-// function login() {
-//   window.location.href = "/package.html";
-// }
+
+function login() {
+  window.location.href = "Login.html";
+}
+
+function bookingpage() {
+  window.location.href = "Booking.html";
+}
