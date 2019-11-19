@@ -7,7 +7,7 @@
 
     $username=$_POST['username'];
 
-    $password=($_POST['password']);
+    $password=md5(md5($_POST['password']));
     $gender=$_POST['gender'];
     $email=$_POST['email'];
     $phoneCode=$_POST['phoneCode'];
