@@ -33,11 +33,7 @@ addMemberbtn.addEventListener("click", function() {
     //---------------------------------//
     var memberInput = document.querySelector("#members");
     var inputpara = document.createElement("div");
-<<<<<<< HEAD
     var memberContents = ` <div class="added-member" data-aos="fade-right">
-=======
-    var memberContents = ` <div class="added-member">
->>>>>>> 5f644218961386c3b9e22584e59c5944bd755d5c
     <p>
       Name:<br /><input
         class="member-${Numbercounts}"
@@ -58,21 +54,12 @@ addMemberbtn.addEventListener("click", function() {
     var genderInput = document.querySelector("#Gender");
     var GenderTag = document.createElement("div");
     var GenderTagContents = `
-<<<<<<< HEAD
     <div class="added-gender" data-aos="fade-right">
     <p>
     Gender:<br /></p> 
     <div class="gender-${Numbercounts}" name="gen-${Numbercounts}">
       <select name="gen-${Numbercounts}">
       <option>Select</option>
-=======
-    <div class="added-gender">
-    <p>
-    Gender:<br /></p> 
-    <div class="gender-${Numbercounts}" name="mem-${Numbercounts}">
-      <select>
-        <option>Select</option>
->>>>>>> 5f644218961386c3b9e22584e59c5944bd755d5c
         <option value="m">Male</option>
         <option value="f">Female</option>
         <option value="o">Other</option>
@@ -89,11 +76,7 @@ addMemberbtn.addEventListener("click", function() {
     var AgeInput = document.querySelector("#Age");
     var AgeTag = document.createElement("div");
     var AgeTagContents = `
-<<<<<<< HEAD
     <div class = "added-age" data-aos="fade-right">
-=======
-    <div class = "added-age">
->>>>>>> 5f644218961386c3b9e22584e59c5944bd755d5c
     <p>Age:<br /><input type="Number" name="age-${Numbercounts}" placeholder="Age" min="0" max="150" required /></p>
     </div>`;
     AgeTag.innerHTML = AgeTagContents;
