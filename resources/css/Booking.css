@@ -124,6 +124,37 @@ h2::after {
 #Gender select option {
   border-radius: 5px;
   font-weight: 600;
+<<<<<<< HEAD
+=======
+}
+.added-gender,
+.added-age {
+  margin-top: 23px;
+}
+
+#Age input {
+  /* background-color: #10ac84; */
+  width: 100%;
+  padding: 9px;
+  border-radius: 5px;
+  /* margin-top: 4px; */
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.price-details {
+  position: absolute;
+  display: block;
+  left: 70%;
+  background-color: rgb(224, 224, 224);
+  width: 25%;
+  padding: 5px 5px 5px 10px;
+  border-radius: 10px;
+  font-weight: 100;
+}
+.price-details div {
+  margin: 0 0 5px 0;
+>>>>>>> 5f644218961386c3b9e22584e59c5944bd755d5c
 }
 .added-gender,
 .added-age {
