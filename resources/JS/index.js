@@ -21,7 +21,7 @@ toggleButton.addEventListener("click", function() {
 });
 
 function packagepage() {
-  window.location.href = "package.html";
+  window.location.href = "packages.html";
 }
 function register() {
   window.location.href = "Register.html";
