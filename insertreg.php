@@ -23,7 +23,7 @@
       {
           $host="localhost";
             $dbUsername="root";
-            $dbPassword="root123";
+            $dbPassword="";
             $dbname="tourism";
             $conn=new mysqli($host,$dbUsername,$dbPassword,$dbname);
 
@@ -50,14 +50,14 @@
                                 $stmt->bind_param('ssssii',$username,$password,$gender,$email,$phoneCode,$phone);
                                 $stmt->execute();
 
-                                  header("location:http://www.localhost/Joker/ok.html");
+                                  header("location:http://www.localhost.com/Bon-Voyage/Login.html");
 
 
                       }
 
                       else
                       {
-                              header("location:http://www.localhost/Joker/sorry.html");
+                              header("location:http://www.localhost.com/Bon-Voyage/Register.html");
                               die();
                       }
 

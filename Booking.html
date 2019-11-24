@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="resources/css/Booking.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
     <title>Booking Page</title>
   </head>
   <body>
-    <section class="booking-section">
-      <h1 class="title">Bookings</h1>
+    <h2 class="title">Bookings</h2>
 
+    <section class="booking-section">
       <div class="main-container">
         <button type="button" name="add-btn" class="add-btn" onclick="counts()">Add Members</button>
         <button type="button" name="rmv-btn" class="rmv-btn">Remove Members</button>
 
-        <form action="booking.php" method="POST">
+        <form action="Booking.php" method="POST">
           <div id="members-container">
             <div id="members">
-              <p>Member Name:<br /><input type="text" name="mem-0" placeholder="Member Name" required /></p>
+              <p>Name:<br /><input type="text" name="mem-0" placeholder="Name" required /></p>
             </div>
-            <button type="submit" value="submit" name="submit" class="sub-btn">Book</button>
+            <div id="Gender">
+              <p class="p-test">Gender:<br /></p>
+
+              <div class="custom-select" style="width:200px;">
+                <select>
+                  <option>Select</option>
+                  <option value="m">Male</option>
+                  <option value="f">Female</option>
+                  <option value="o">Other</option>
+                </select>
+              </div>
+            </div>
+            <div id="Age">
+              <p>Age:<br /><input type="Number" name="mem-0" placeholder="Age" min="0" max="150" required /></p>
+            </div>
           </div>
+          <button type="submit" value="submit" name="submit" class="sub-btn">Book</button>
+        </form>
+      </div>
+      <div class="price-details">
+        <form>
+          <div>Booking Details</div>
+          <!-- <div>Number of Members:</div> -->
+          <div>Package Name<span></span></div>
+          <div>Package Amount <span></span></div>
+          <div>Total Amount</div>
         </form>
       </div>
     </section>
@@ -29,3 +54,6 @@
   <script src="resources/JS/Booking.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </html>
+
+<!-- DYNAMIC VARIABLE IN PHP -->
+<!-- ${"file".$i} = file($filelist[$i]); -->

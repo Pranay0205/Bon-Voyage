@@ -116,9 +116,11 @@ header {
   background-position: right bottom;
   transition: all 0.3s ease-out;
 }
+
 a {
   text-decoration: none;
 }
+
 .home-register {
   right: 15px;
 }
@@ -181,7 +183,7 @@ h2::after {
 }
 .section1-images img {
   width: 50%;
-  height: 398px;
+  height: 358px;
 }
 
 .firstImage {
@@ -234,7 +236,7 @@ h2::after {
 footer {
   background-color: #333;
   padding: 10px;
-  font-size: 80%;
+  font-size: 60%;
 }
 
 .footer-nav {

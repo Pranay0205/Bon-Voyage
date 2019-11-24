@@ -28,12 +28,59 @@ function counts() {
 addMemberbtn.addEventListener("click", function() {
   var Numbercounts = count;
   if (Numbercounts <= 5) {
+    //---------------------------------//
+    //-- ADDING MEMBER NAME HTML TAG --//
+    //---------------------------------//
     var memberInput = document.querySelector("#members");
     var inputpara = document.createElement("div");
-    var memberContents = `<p class="added-member">Member Name:</br><input class = "member-${Numbercounts}" name = "mem-${Numbercounts}" type="text" placeholder="Member Name" required></p>`;
+    var memberContents = ` <div class="added-member">
+    <p>
+      Name:<br /><input
+        class="member-${Numbercounts}"
+        name="mem-${Numbercounts}"
+        type="text"
+        placeholder="Name"
+        required/>
+    </p>
+    </div>`;
     inputpara.innerHTML = memberContents;
     memberInput.appendChild(inputpara);
     // memberInput.appendChild(document.createElement("br"));
+
+    //-----------------------------------//
+    //----- ADDING GENDER HTML TAG -----//
+    //----------------------------------//
+
+    var genderInput = document.querySelector("#Gender");
+    var GenderTag = document.createElement("div");
+    var GenderTagContents = `
+    <div class="added-gender">
+    <p>
+    Gender:<br /></p> 
+    <div class="gender-${Numbercounts}" name="mem-${Numbercounts}">
+      <select>
+        <option>Select</option>
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+        <option value="o">Other</option>
+      </select>
+    </div>
+  </div>`;
+    GenderTag.innerHTML = GenderTagContents;
+    genderInput.appendChild(GenderTag);
+
+    //------------------------------------//
+    //------- ADDING AGE HTML TAG -------//
+    //----------------------------------//
+
+    var AgeInput = document.querySelector("#Age");
+    var AgeTag = document.createElement("div");
+    var AgeTagContents = `
+    <div class = "added-age">
+    <p>Age:<br /><input type="Number" name="age-${Numbercounts}" placeholder="Age" min="0" max="150" required /></p>
+    </div>`;
+    AgeTag.innerHTML = AgeTagContents;
+    AgeInput.appendChild(AgeTag);
   } else {
     swal("Oops!", "Can only add 5 members!");
     count = 5;
@@ -43,12 +90,19 @@ addMemberbtn.addEventListener("click", function() {
 //--------------------------------//
 //------- Members Remover --------//
 //--------------------------------//
+
 removeBtn.addEventListener("click", function() {
   var Numbercounts = count;
   if (Numbercounts > 0) {
-    var memberInput = document.querySelector(".added-member");
-    // console.log(memberInput);
-    memberInput.parentElement.lastChild.remove();
+    var memberInput = document.querySelector("#members");
+    memberInput.removeChild(memberInput.lastChild);
+
+    var genderadder = document.querySelector("#Gender");
+    genderadder.removeChild(genderadder.lastChild);
+
+    var ageadder = document.querySelector("#Age");
+    ageadder.removeChild(ageadder.lastChild);
+
     count--;
     console.log(count);
   } else {
