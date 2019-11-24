@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 @import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 
-/* ----------Button-Color= #2bcbba------------  */
+/* ----------Button-Color= #10ac84------------  */
 /* ----------Background-color= #ece9e6---------- */
 * {
   padding: 0;
@@ -11,6 +11,8 @@
 body {
   font-size: 24px;
   font-family: "Righteous", cursive;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 /* ---------------------------------------------- */
@@ -45,7 +47,7 @@ body {
   padding: 15px 10px;
   border-bottom: 1px solid #797979;
   cursor: pointer;
-  background: #2bcbba;
+  background: #10ac84;
 }
 #sidebar #toggle-btn {
   position: absolute;
@@ -102,7 +104,7 @@ header {
   top: 15px;
   right: 180px;
   padding: 20px 30px 20px 30px;
-  background-color: #2bcbba;
+  background-color: #10ac84;
   font-family: "Righteous", cursive;
   position: absolute;
   border: none;
@@ -111,14 +113,16 @@ header {
   cursor: pointer;
   font-size: 100%;
   outline: none;
-  background: linear-gradient(to right, white 50%, #2bcbba 50%);
+  background: linear-gradient(to right, white 50%, #10ac84 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.3s ease-out;
 }
+
 a {
   text-decoration: none;
 }
+
 .home-register {
   right: 15px;
 }
@@ -128,12 +132,16 @@ a {
 .home-register:hover,
 .home-register:active {
   background-position: left bottom;
-  color: #2bcbba;
+  color: #10ac84;
 }
 /* ---------------------------------------------- */
 /* -----------------FIRST SECTION---------------- */
 /* ---------------------------------------------- */
 
+section {
+  scroll-snap-align: start;
+  overflow: hidden;
+}
 .first-section {
   height: 100vh;
   /* background: #ceccca;
@@ -181,7 +189,7 @@ h2::after {
 }
 .section1-images img {
   width: 50%;
-  height: 398px;
+  height: 358px;
 }
 
 .firstImage {
@@ -216,7 +224,7 @@ h2::after {
 
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: #2bcbba;
+  background-color: #10ac84;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
@@ -234,7 +242,7 @@ h2::after {
 footer {
   background-color: #333;
   padding: 10px;
-  font-size: 80%;
+  font-size: 60%;
 }
 
 .footer-nav {

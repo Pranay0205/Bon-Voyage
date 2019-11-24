@@ -34,3 +34,7 @@ function login() {
 function bookingpage() {
   window.location.href = "Booking.html";
 }
+
+function contactUspage() {
+  window.location.href = "ContactUs.html";
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE .html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="resources/css/contact1.css" />
+  </head>
+  <body>
+    <div class="para">
+      <h3>GOT A QUESTION?</h3>
+      <h1>CONTACT BON-VOYAGE</h1>
+    </div>
+    <p class="para1">
+      We’re here to help and answer any question you might have. We look forward to hearing from you 🙂
+    </p>
+    <p class="para2">How Can We Help? If you don’t find what you need, fill out our contact form.</p>
+  </body>
+  <div id="form-main">
+    <div id="form-div">
+      <form action="ContactUs.php" method="POST" class="montform" id="reused_form">
+        <p class="name">
+          <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
+        </p>
+        <p class="email">
+          <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
+        </p>
+        <p class="text">
+          <input name="message" class="feedback-input" id="comment" placeholder="Message"></input>
+        </p>
+        <div class="submit">
+          <button type="submit" class="button-blue">SUBMIT</button>
+          <div class="ease"></div>
+        </div>
+      </form>
+      <div id="error_message" style="width:100%; height:100%; display:none; ">
+        <h4>Error</h4>
+        Sorry there was an error sending your form.
+      </div>
+      <div id="success_message" style="width:100%; height:100%; display:none; ">
+        <h2>Success! Your Message was Sent Successfully.</h2>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p></p>
+  </div>
+</html>

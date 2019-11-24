@@ -18,7 +18,7 @@ if(!empty($email) || !empty($password))
       {
           $host="localhost";
             $dbUsername="root";
-            $dbPassword="root123";
+            $dbPassword="";
             $dbname="tourism";
             $conn=new mysqli($host,$dbUsername,$dbPassword,$dbname);
 
@@ -50,13 +50,18 @@ if(!empty($email) || !empty($password))
 
                                 if($rnum1!=0)
                                 {
-                                    header("location:index.html");
+                                  $_SESSION['email']=$email;
+                                  $_SESSION['password']=$password;
+                                    header("location:Booking.html");
+                                   
 
                                 }
 
                                 else 
                                 {
-                                    echo("WRONG PASSWORD ! ");
+                              
+                                  echo('<script>alert("WRONG PASSWORD ! ");</script>');
+                                  
                                 }
             
                                   
